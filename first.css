@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+ *{
+    margin:0;
+    border : border-box;
+    overflow-y: none;
+    overflow-x: none;
+}
+.main-area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.side-bar{
+    width: 6rem;
+    height: 100vh;
+    background-color: rgb(5, 78, 5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.working-area{
+    height: 100vh;
+    width: calc(100% - 6rem);
+    background: gray;
+}
+.navbar{
+    height: 12vh;
+    width: 100%;
+    background: gray;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    display: flex;
+    
+}
+.hero-section{
+    height: calc(100% - 12vh);
+    width: 100%;
+    background: lightgrey;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+.content{
+    background: lightgrey;
+    flex: 1;
+    padding-left: 5rem;
+}
+.swiper{
+    flex: 1;
+    position: relative;
+}
+.icons{
+    padding-block: 2rem;
+}
+.social-icons{
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.fa-brands{
+    color: white;
+    font-size: 1.35rem;
+}
+li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+.action{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.fa-solid{
+    color: black;
+    font-size: 1.12rem;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.navlinks{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    letter-spacing: 0.05rem;
+}
+h1{
+    font-size: 5rem;
+    color: rgb(5, 83, 5);
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    letter-spacing: 0.2rem;
+}
+button{
+    color: white;
+    background-color: darkgreen;
+    font-family: "DM Serif Display", serif;
+    border: none;
+    height: 2.2rem;
+    width: 8rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: transform .5s ease-out;
+}
+button:hover{
+    transform: scale(1.1);
+}
+h2{
+    font-weight: 800;
+}
+.detail{
+    margin-top: 3rem;
+    gap: 3rem;
+}
+.swiper-slide img {
+    width: 30vw;
+    height: 77vh;
+    margin-left: 100px;
+}
+.swiper::before{
+    content: '';
+    position: absolute;
+    inset: 6rem;
+    border-radius: 50%;
+    background-color: rgb(147, 70, 43);
+}
+.swiper::after{
+    content: '';
+    border: .1rem solid rgb(7, 84, 7);
+    position: absolute;
+    inset: 2rem;
+    border-radius: 50%;
+    opacity: .4;
+}
+.controls{
+    background-color: rgb(14, 108, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 3rem;
+    height: 10rem;
+    top: 50%;
+    right: -10%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding-left: 2rem;
+    position: absolute;
+}
+.fa-angle-right,
+.fa-angle-left{
+    color: white;
+    font-size: 2rem;
+}
+.play{
+  position: absolute;
+  top: 7%;
+  left: 20%;
+  background-color: darkgreen;
+  padding: 1.6rem 2rem;
+  border-radius: 50%;
+  z-index: 5;
+  transition: transform .5s ease-out;
+}
+.fa-play{
+    color: white;
+}
+.play:hover{
+    transform: 
+    scale(1.15)  translateY(-15%); 
+}
+.play::before{
+    content: '';
+    background-color: darkgreen;
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    opacity: .8;
+    animation: pulse 3s ease-out infinite;
+}
+@keyframes pulse {
+    100%{
+opacity: 0;
+transform: scale(1.8);
+    }
+}
+.play:hover::before{
+    animation: none;
+}
