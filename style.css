@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    overflow-y: none;
+}
+body{
+    background-color: grey;
+     color: black;
+   }
+.head {
+    height: 20px;
+    width: 340px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#nitish{
+    background-color: rgb(114, 96, 96);
+    height: 110px;
+    width: 110px;
+    position: absolute ;
+    right: 50px;
+    top: 30px;
+    /* margin-left: 340px; */
+    /* margin-bottom: 8px; */
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid darkgray; 
+    background-repeat: no-repeat;
+    transform: rotate3d(25px);
+    text-align: left;
+    box-shadow: 5px 5px 25px aqua;
+}
+#intro{
+    margin-left: 20px;
+}
+.photo{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-decoration:dashed;
+}
+#niti{
+    font-family: cursive;
+}
+#shanu{
+    text-decoration: none;
+    font-family: cursive;
+    margin-bottom: 8px;
+}
+#photos{
+    font-weight: bolder;
+}
+.box-image{
+    height: 40px;
+    background-size:contain;
+    background-repeat: no-repeat;
+   width: 80px;
+}
+    .box-content{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .ni{
+        margin-left: -15px;
+        font-size: 0.3cm;
+    }
+    .box-content{
+        display: flex;
+    }
+    .box-image1{
+        background-size:cover;
+        background-repeat: no-repeat;
+       width: 50px;    
+        height: 25px;
+        margin-left: 50px;
+        background-size: contain;
+    }
+    .ti{
+        margin-left: -40px;
+        font-size: 0.3cm;
+    }
